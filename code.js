@@ -1,5 +1,5 @@
 function permutationSort(a) {
-        var perm = 0;
+    var perm = 0;
     perm = sort(a, 0, a.length -1,perm);
     return perm;
 }
