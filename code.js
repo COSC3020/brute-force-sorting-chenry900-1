@@ -5,10 +5,14 @@ function permutationSort(a) {
 }
 
 function sort(array, low, high, perm) {
-    if (low >= high) 
-        return perm;
+    if (low >= high) {
+        perm += 1;
+        if (sorted(array) = true;) {
+            return perm;
+        }
+    }
     var p = low;
-    for (var i = low +1; i <= high; i++) {
+    for (var i = low + 1; i <= high; i++) {
         if (array[i] < array[low]) {
             p++;
             var swap = array[p];
@@ -24,4 +28,13 @@ function sort(array, low, high, perm) {
     perm = sort(array, low, p-1, perm);
     perm = sort(array, p+1, high, perm);
     return perm;
+}
+
+function sorted(array) {
+    for (var i = 0; i < array.length - 1; i++) {
+        if (array[i] > array[i +1]) {
+            return false;
+        }
+    }
+    return true;
 }
