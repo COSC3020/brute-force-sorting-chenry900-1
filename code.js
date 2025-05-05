@@ -40,4 +40,3 @@ function swap(array, num, i) {
     array[num] = array[i];
     array[i] = temp;
 }
-}
