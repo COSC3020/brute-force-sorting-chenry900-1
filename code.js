@@ -7,7 +7,7 @@ function permutationSort(a) {
 function sort(array, low, high, perm) {
     if (low >= high) {
         perm += 1;
-        if (sorted(array) = true) {
+        if (sorted(array) == true) {
             return perm;
         }
     }
