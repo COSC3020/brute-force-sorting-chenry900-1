@@ -21,7 +21,9 @@ randomly without memory instead of systematically trying them?
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. Add your answer to this markdown file.
 
-The recursive call breaks the array in half each time so it will run at O(log n) times unless the pivot is the highest or lowest number then it would need to run through the array O(n) times. The for loop in the recursive call needs to go through every number so it would run n times. So you end up with O(nlog n) in the best case or O(n^2) in the worst case.
+Since the code needs to check all permutations of the array it would need to run at O(n!) time.
+When I go to check if the array is sorted it goes through every number so you get O(n). 
+So the runtime would be O(n*n!). So in the best case it would only need to check the array before returning it making the run time O(n). The worst case is it would have to try every permutation making it run at O(n*n!).
 
 code used was copied from my last semester work
 I certify that I have listed all sources used to complete this exercise, including the use of any Large Language Models. All of the work is my own, except where stated otherwise. I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, charges may be filed against me without prior notice.
